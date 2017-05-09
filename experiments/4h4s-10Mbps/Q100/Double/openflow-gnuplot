@@ -1,0 +1,22 @@
+#!/bin/bash
+set terminal pngcairo size 1600,900
+
+set output "OF-delay-with-RTT.png"
+
+set key reverse right top font ",14" 
+set key spacing 1.0
+
+set multiplot layout 1,1 title "OF Oneway delay and S4 IAT, with RTT - BW=10Mbps, RTT 20ms, Queue size 100 packets" font "Arial-Bold,16"
+set xlabel "Time (sec) " font ",12" 
+set xrange [0:200]
+set grid
+offset_D=363099.937569
+offset_D1=48.230 
+# offset_D2=07.325
+mul=1
+set yrange[0:180]
+set ylabel "Time (msec)" font ",12"
+
+plot"owd-new" using ($1-offset_D1):(($2)*1000) with points pt 7 ps 1 title "Openflow One-way delay","s4_iat-new" using ($1-offset_D1):(($2)*1000) title "OF S4 IAT" with points lt rgb "green","rtt_new_11" using (($1-offset_D)*mul):(($2)*0.000125) title "RTT"  with points lt rgb "orange"
+# ,"tcpdump-timedelay" using ($1-offset_D2):(($2)*1000) title "Wireshark One-way delay" with points lt rgb "blue"
+#, "s2iattime" using ($1-offset_D1):(($2)*100) title "Openflow One-way delay" with points lt rgb "black"

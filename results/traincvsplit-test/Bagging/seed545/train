@@ -1,0 +1,107 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     all-combined-weka.filters.unsupervised.instance.Randomize-S545-weka.filters.unsupervised.instance.Resample-S1-Z80.0-no-replacement
+Instances:    1036
+Attributes:   63
+              avgw3delay_div_avgw1delay
+              avgw3delay_div_minw1delay
+              avgw3delay_div_maxw1delay
+              avgw3delay_div_avgw2delay
+              avgw3delay_div_minw2delay
+              avgw3delay_div_maxw2delay
+              minw3delay_div_avgw1delay
+              minw3delay_div_minw1delay
+              minw3delay_div_maxw1delay
+              minw3delay_div_avgw2delay
+              minw3delay_div_minw2delay
+              minw3delay_div_maxw2delay
+              maxw3delay_div_avgw1delay
+              maxw3delay_div_minw1delay
+              maxw3delay_div_maxw1delay
+              maxw3delay_div_avgw2delay
+              maxw3delay_div_minw2delay
+              maxw3delay_div_maxw2delay
+              minw3delay_div_maxw3delay
+              stdw3delay_div_stdw1delay
+              stdw3delay_div_stdw2delay
+              stdw1delay_div_stdw2delay
+              avgw1delay_div_avgw2delay
+              avgw1delay_div_minw2delay
+              avgw1delay_div_maxw2delay
+              minw1delay_div_avgw2delay
+              minw1delay_div_minw2delay
+              minw1delay_div_maxw2delay
+              maxw1delay_div_avgw2delay
+              maxw1delay_div_minw2delay
+              maxw1delay_div_maxw2delay
+              avgw3iat_div_avgw1iat
+              avgw3iat_div_minw1iat
+              avgw3iat_div_maxw1iat
+              avgw3iat_div_avgw2iat
+              avgw3iat_div_minw2iat
+              avgw3iat_div_maxw2iat
+              minw3iat_div_avgw1iat
+              minw3iat_div_minw1iat
+              minw3iat_div_maxw1iat
+              minw3iat_div_avgw2iat
+              minw3iat_div_minw2iat
+              minw3iat_div_maxw2iat
+              maxw3iat_div_avgw1iat
+              maxw3iat_div_minw1iat
+              maxw3iat_div_maxw1iat
+              maxw3iat_div_avgw2iat
+              maxw3iat_div_minw2iat
+              maxw3iat_div_maxw2iat
+              minw3iat_div_maxw3iat
+              stdw3iat_div_stdw1iat
+              stdw3iat_div_stdw2iat
+              stdw1iat_div_stdw2iat
+              avgw1iat_div_avgw2iat
+              avgw1iat_div_minw2iat
+              avgw1iat_div_maxw2iat
+              minw1iat_div_avgw2iat
+              minw1iat_div_minw2iat
+              minw1iat_div_maxw2iat
+              maxw1iat_div_avgw2iat
+              maxw1iat_div_minw2iat
+              maxw1iat_div_maxw2iat
+              class
+Test mode:    split 75.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+
+Time taken to build model: 0.26 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         242               93.4363 %
+Incorrectly Classified Instances        17                6.5637 %
+Kappa statistic                          0.8684
+Mean absolute error                      0.1216
+Root mean squared error                  0.2304
+Relative absolute error                 24.4068 %
+Root relative squared error             46.2095 %
+Total Number of Instances              259     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.966    0.092    0.897      0.966    0.930      0.870    0.981     0.975     c
+                 0.908    0.034    0.970      0.908    0.938      0.870    0.981     0.986     n
+Weighted Avg.    0.934    0.060    0.937      0.934    0.935      0.870    0.981     0.981     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 113   4 |   a = c
+  13 129 |   b = n
+

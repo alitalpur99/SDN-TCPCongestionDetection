@@ -1,0 +1,178 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     all-combined-weka.filters.unsupervised.instance.Randomize-S1600-weka.filters.unsupervised.instance.Resample-S1-Z80.0-no-replacement
+Instances:    1036
+Attributes:   63
+              avgw3delay_div_avgw1delay
+              avgw3delay_div_minw1delay
+              avgw3delay_div_maxw1delay
+              avgw3delay_div_avgw2delay
+              avgw3delay_div_minw2delay
+              avgw3delay_div_maxw2delay
+              minw3delay_div_avgw1delay
+              minw3delay_div_minw1delay
+              minw3delay_div_maxw1delay
+              minw3delay_div_avgw2delay
+              minw3delay_div_minw2delay
+              minw3delay_div_maxw2delay
+              maxw3delay_div_avgw1delay
+              maxw3delay_div_minw1delay
+              maxw3delay_div_maxw1delay
+              maxw3delay_div_avgw2delay
+              maxw3delay_div_minw2delay
+              maxw3delay_div_maxw2delay
+              minw3delay_div_maxw3delay
+              stdw3delay_div_stdw1delay
+              stdw3delay_div_stdw2delay
+              stdw1delay_div_stdw2delay
+              avgw1delay_div_avgw2delay
+              avgw1delay_div_minw2delay
+              avgw1delay_div_maxw2delay
+              minw1delay_div_avgw2delay
+              minw1delay_div_minw2delay
+              minw1delay_div_maxw2delay
+              maxw1delay_div_avgw2delay
+              maxw1delay_div_minw2delay
+              maxw1delay_div_maxw2delay
+              avgw3iat_div_avgw1iat
+              avgw3iat_div_minw1iat
+              avgw3iat_div_maxw1iat
+              avgw3iat_div_avgw2iat
+              avgw3iat_div_minw2iat
+              avgw3iat_div_maxw2iat
+              minw3iat_div_avgw1iat
+              minw3iat_div_minw1iat
+              minw3iat_div_maxw1iat
+              minw3iat_div_avgw2iat
+              minw3iat_div_minw2iat
+              minw3iat_div_maxw2iat
+              maxw3iat_div_avgw1iat
+              maxw3iat_div_minw1iat
+              maxw3iat_div_maxw1iat
+              maxw3iat_div_avgw2iat
+              maxw3iat_div_minw2iat
+              maxw3iat_div_maxw2iat
+              minw3iat_div_maxw3iat
+              stdw3iat_div_stdw1iat
+              stdw3iat_div_stdw2iat
+              stdw1iat_div_stdw2iat
+              avgw1iat_div_avgw2iat
+              avgw1iat_div_minw2iat
+              avgw1iat_div_maxw2iat
+              minw1iat_div_avgw2iat
+              minw1iat_div_minw2iat
+              minw1iat_div_maxw2iat
+              maxw1iat_div_avgw2iat
+              maxw1iat_div_minw2iat
+              maxw1iat_div_maxw2iat
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+maxw3delay_div_maxw2delay <= 1
+|   stdw3delay_div_stdw1delay <= 1.340316
+|   |   stdw3delay_div_stdw2delay <= 1.415591
+|   |   |   avgw3delay_div_minw2delay <= 1.409091
+|   |   |   |   minw3delay_div_minw1delay <= 1.104167
+|   |   |   |   |   maxw1delay_div_minw2delay <= 1.022989
+|   |   |   |   |   |   minw3delay_div_avgw2delay <= 1.007303
+|   |   |   |   |   |   |   minw3delay_div_avgw1delay <= 1.013198: n (3.0)
+|   |   |   |   |   |   |   minw3delay_div_avgw1delay > 1.013198
+|   |   |   |   |   |   |   |   avgw3delay_div_maxw1delay <= 0.999889: c (8.0)
+|   |   |   |   |   |   |   |   avgw3delay_div_maxw1delay > 0.999889
+|   |   |   |   |   |   |   |   |   avgw3delay_div_avgw1delay <= 1.012116: n (2.0)
+|   |   |   |   |   |   |   |   |   avgw3delay_div_avgw1delay > 1.012116: c (2.0)
+|   |   |   |   |   |   minw3delay_div_avgw2delay > 1.007303: n (5.0)
+|   |   |   |   |   maxw1delay_div_minw2delay > 1.022989: n (63.0/1.0)
+|   |   |   |   minw3delay_div_minw1delay > 1.104167
+|   |   |   |   |   minw1delay_div_maxw2delay <= 0.888889
+|   |   |   |   |   |   minw3delay_div_avgw2delay <= 1.007089
+|   |   |   |   |   |   |   minw3delay_div_maxw1delay <= 1.040816
+|   |   |   |   |   |   |   |   maxw1delay_div_maxw2delay <= 0.954545: n (6.0)
+|   |   |   |   |   |   |   |   maxw1delay_div_maxw2delay > 0.954545
+|   |   |   |   |   |   |   |   |   minw3delay_div_minw2delay <= 1.594386
+|   |   |   |   |   |   |   |   |   |   maxw1iat_div_maxw2iat <= 0.954545: n (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   maxw1iat_div_maxw2iat > 0.954545: c (9.0)
+|   |   |   |   |   |   |   |   |   minw3delay_div_minw2delay > 1.594386: n (3.0)
+|   |   |   |   |   |   |   minw3delay_div_maxw1delay > 1.040816: c (6.0)
+|   |   |   |   |   |   minw3delay_div_avgw2delay > 1.007089
+|   |   |   |   |   |   |   avgw3delay_div_avgw2delay <= 1.008847: n (18.0)
+|   |   |   |   |   |   |   avgw3delay_div_avgw2delay > 1.008847
+|   |   |   |   |   |   |   |   minw3iat_div_avgw1iat <= 5.276382
+|   |   |   |   |   |   |   |   |   avgw3delay_div_minw2delay <= 1.078431
+|   |   |   |   |   |   |   |   |   |   avgw3delay_div_minw2delay <= 1.068966: n (2.0)
+|   |   |   |   |   |   |   |   |   |   avgw3delay_div_minw2delay > 1.068966: c (3.0)
+|   |   |   |   |   |   |   |   |   avgw3delay_div_minw2delay > 1.078431: n (11.0)
+|   |   |   |   |   |   |   |   minw3iat_div_avgw1iat > 5.276382: c (3.0)
+|   |   |   |   |   minw1delay_div_maxw2delay > 0.888889: c (6.0)
+|   |   |   avgw3delay_div_minw2delay > 1.409091: c (9.0/1.0)
+|   |   stdw3delay_div_stdw2delay > 1.415591: c (19.0/1.0)
+|   stdw3delay_div_stdw1delay > 1.340316
+|   |   stdw3delay_div_stdw1delay <= 4.477087
+|   |   |   stdw3iat_div_stdw1iat <= 0.882335: c (26.0)
+|   |   |   stdw3iat_div_stdw1iat > 0.882335
+|   |   |   |   minw1delay_div_maxw2delay <= 0.815789
+|   |   |   |   |   maxw3delay_div_maxw1delay <= 0.616667
+|   |   |   |   |   |   maxw3iat_div_maxw2iat <= 0.875: n (3.0)
+|   |   |   |   |   |   maxw3iat_div_maxw2iat > 0.875
+|   |   |   |   |   |   |   avgw3iat_div_avgw1iat <= 1.257426
+|   |   |   |   |   |   |   |   stdw3iat_div_stdw1iat <= 0.913859: n (3.0)
+|   |   |   |   |   |   |   |   stdw3iat_div_stdw1iat > 0.913859
+|   |   |   |   |   |   |   |   |   minw3delay_div_minw2delay <= 0.685841
+|   |   |   |   |   |   |   |   |   |   avgw1delay_div_maxw2delay <= 0.829727: n (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   avgw1delay_div_maxw2delay > 0.829727: c (7.0)
+|   |   |   |   |   |   |   |   |   minw3delay_div_minw2delay > 0.685841: c (40.0/2.0)
+|   |   |   |   |   |   |   avgw3iat_div_avgw1iat > 1.257426: n (3.0)
+|   |   |   |   |   maxw3delay_div_maxw1delay > 0.616667: c (38.0)
+|   |   |   |   minw1delay_div_maxw2delay > 0.815789
+|   |   |   |   |   maxw3delay_div_minw2delay <= 1.034483: c (8.0)
+|   |   |   |   |   maxw3delay_div_minw2delay > 1.034483
+|   |   |   |   |   |   stdw3iat_div_stdw2iat <= 1.023945: c (3.0)
+|   |   |   |   |   |   stdw3iat_div_stdw2iat > 1.023945: n (12.0)
+|   |   stdw3delay_div_stdw1delay > 4.477087: c (304.0/5.0)
+maxw3delay_div_maxw2delay > 1
+|   minw3delay_div_maxw2delay <= 0.885
+|   |   maxw3delay_div_maxw2delay <= 1.016529: c (5.0)
+|   |   maxw3delay_div_maxw2delay > 1.016529: n (19.0/1.0)
+|   minw3delay_div_maxw2delay > 0.885: n (377.0/1.0)
+
+Number of Leaves  : 	34
+
+Size of the tree : 	67
+
+
+Time taken to build model: 0.08 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         219               84.2308 %
+Incorrectly Classified Instances        41               15.7692 %
+Kappa statistic                          0.6847
+Mean absolute error                      0.1602
+Root mean squared error                  0.3828
+Relative absolute error                 32.0552 %
+Root relative squared error             76.4883 %
+Total Number of Instances              260     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.860    0.176    0.828      0.860    0.844      0.685    0.844     0.808     c
+                 0.824    0.140    0.857      0.824    0.840      0.685    0.844     0.817     n
+Weighted Avg.    0.842    0.157    0.843      0.842    0.842      0.685    0.844     0.812     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 111  18 |   a = c
+  23 108 |   b = n
+

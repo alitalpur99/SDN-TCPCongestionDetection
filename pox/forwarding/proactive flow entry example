@@ -1,0 +1,80 @@
+Transcript
+Assignment 1
+Working with Mininet and POX
+Due: 28-02-2016
+In this assignment we will know how to: install mininet (network emulator), connect SDN controller to mininet, run
+mininet and POX, install proactive flow-entries by writing them in “_handle_ConnectionUp”, test the performance
+metrics of proactive and reactive flow-setup, and collect network statistics, port statistics.
+• Part 1:
+In this part, you will learn the basics of running Mininet in a VirtualBox virtual machine. It would be very
+useful to read (Introduction to Mininet at https://github.com/mininet/mininet/wiki/Introduction-to-Mininet)
+First, install Virtual Box on your computer. Then, download and install the custom virtual machine. (Do not
+use the VM referenced at the OpenFlow Tutorial Web site
+(http://archive.openflow.org/wk/index.php/OpenFlow_Tutorial). Our custom VM works on a wider variety of
+platforms, and has software installed that you'll need on future assignments.) See the video instructions.
+To install the VM, start VirtualBox, and then select File>Import Appliance and select the downloaded ova
+file. Then, press the Import button.
+Then, follow the instructions for parts 1 through 4 of the OpenFlow Tutorial.
+• When following the instructions for "Set Up Network Access" (in Settings>Network>Adapter2) you
+will create a host-only interface for accessing your VM by SSH. Make sure that you select "Cable
+Connected" under "Advanced", while your machine is powered off, to ensure that this interface is
+"plugged in". (If your attempt to assign the interface an IP address (using dhclient) fails, check that
+your host-only interface has the "Cable Connected" -- again, while the VM is powered down.)
+• OS X Mountain Lion users: To enable X11 forwarding through OS X native terminal, you must install
+XQuartz, which isn't shipped with the OS anymore.
+• The instructions in Section 4.8 are incorrect, replace "$ sudo mn --topo single,3 --mac --controller
+remote --switch user" with "$ sudo mn --topo single,3 –mac".
+• You need to know how to run custom mininet topology to run your own topology and this help you in
+next part.
+You may also find the MiniNet Sample Workflow for more details.
+You do not need to submit any written materials for this part.
+• Part 2:
+In this part, you will learn the basics of SDN programming on the POX controller platform. Complete the POX
+part in OpenFlow tutorial, using your existing VM from part 1 rather than installing a new VM.
+• Build a simple topology using mininet to have four hosts and one switch.
+• Run the POX controller with forward.l2_nx in another Putty window as described in the OpenFlow
+tutorial.
+• Run the mininet topology in another Putty window.
+• Ping the four hosts by using pingall command
+• show the flow-table $sh ovs-ofctl dump-flows s1
+• Copy the flow-table in your documentation program, such as Word, Learn in which port each device
+is connected, this part need to be submitted with your assignment.
+• Restart this part again
+• ping each device from each other one by one for 15 times and write in your documentation the
+average results
+h1 ping -c 15 h2 # for every device
+• Open the l2_nx.py file by using nano or gedit which is better
+mininet\pox\pox\forwarding> gedit l2_nx.py
+• in the code you will find two main functions “_handle_PacketIn” and “_handle_ConnectionUp”. The
+foremer function is only called when an unknow flow arrives to a switch. The latter function is called
+when a switch “data-plane device” is connected to the POX controller.
+• In this part we need to learn how to install a proactive flow-entries which means when an unknow
+flow arrives to the switch there will be flow-entry to match that means the “ _handle_PacketIn”
+function will not be called.
+• To do that we need to modify the “_handle_ConnectionUp” function to have to install the flow-entries
+right-away when a switch connect to the controller.
+msg
+= nx.nx_flow_mod()
+msg.idle_timeout = 0
+msg.hard_timeout = 0
+msg.match.of_eth_src = EthAddr("h1")# replace h1 with the MAC address of h1,(e.g.,
+00:00:00:00:00:01)
+msg.match.of_eth_dst = EthAddr("h2")# replace h1 with the MAC address of h1,(e.g.,
+00:00:00:00:00:01)
+msg.actions.append(nx.nx_action_dec_ttl())
+msg.actions.append(of.ofp_action_output(port = h2_in_port))# replace h2_in_port with the h2 port
+number
+core.openflow.sendToDPID(event.dpid, msg)
+• inserts a flow-entry for every host connected to the switch in this case we have h1-h4 . To get their
+MAC addresses and port number use the flow-table that was dumpied in previous part.
+• Ping each device from other devices for 15 times then write down the average results.
+• Compare the result of the previous two parts by plotting them using excel or matlab or gnuplot or
+anything you like. Which is faster part one or part two and Why?
+• Part 3
+Use the following program to learn how to collect the current network statistics
+https://github.com/hip2b2/poxstuff/blob/master/flow_stats.py
+Collect and plot the following statistical data:
+1. Queue-Stats
+2. Flow-Stats
+3. Port-Stats
+Run the Part 1 experiment and pingall the hosts then collect the listed statistics.

@@ -1,0 +1,19 @@
+#!/bin/bash
+set terminal pngcairo size 1600,900
+
+set output "wireshark-delay-with-RTT.png"
+
+set key reverse right top font ",14" 
+set key spacing 1.0
+
+set multiplot layout 1,1 title "Wireshark Oneway delay vs Kernel Estimated RTT - BW=10Mbps, RTT=40ms, Queue size 50 packets" font "Arial-Bold,18"
+set xlabel "Time (sec) " font ",12" 
+set xrange [0:20]
+set grid
+offset_D=95219.186311
+offset_D2=07.112186
+
+set yrange[0:100]
+set ylabel "Time (msec)" font ",12"
+#plot"tcpdump-timedelay" using ($1-offset_D2):(($2)*1000) title "Wireshark One-way delay" with points lt rgb "blue",
+plot "rtt_new_11" using (($1-offset_D)):(($2)*0.000125) title "RTT"  with points lt rgb "orange"

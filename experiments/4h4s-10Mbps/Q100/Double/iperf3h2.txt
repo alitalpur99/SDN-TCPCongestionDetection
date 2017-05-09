@@ -1,0 +1,121 @@
+Mon Dec 5 15:37:01 CET 2016
+Connecting to host 10.0.0.3, port 5201
+[ 24] local 10.0.0.2 port 35008 connected to 10.0.0.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[ 24]   0.00-1.00   sec   468 KBytes  3.83 Mbits/sec   35   52.3 KBytes       
+[ 24]   1.00-2.00   sec   578 KBytes  4.74 Mbits/sec    0   63.6 KBytes       
+[ 24]   2.00-3.00   sec   578 KBytes  4.74 Mbits/sec    0   70.7 KBytes       
+[ 24]   3.00-4.00   sec   580 KBytes  4.75 Mbits/sec    0   76.4 KBytes       
+[ 24]   4.00-5.00   sec   588 KBytes  4.82 Mbits/sec    1   42.4 KBytes       
+[ 24]   5.00-6.00   sec   584 KBytes  4.78 Mbits/sec    0   50.9 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[ 24]   0.00-6.00   sec  3.30 MBytes  4.61 Mbits/sec   36             sender
+[ 24]   0.00-6.00   sec  3.24 MBytes  4.53 Mbits/sec                  receiver
+
+iperf Done.
+Mon Dec 5 15:37:28 CET 2016
+Connecting to host 10.0.0.3, port 5201
+[ 24] local 10.0.0.2 port 35010 connected to 10.0.0.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[ 24]   0.00-1.00   sec   216 KBytes  1.77 Mbits/sec    9   24.0 KBytes       
+[ 24]   1.00-2.00   sec   317 KBytes  2.59 Mbits/sec    0   36.8 KBytes       
+[ 24]   2.00-3.00   sec   416 KBytes  3.41 Mbits/sec    0   46.7 KBytes       
+[ 24]   3.00-4.00   sec   448 KBytes  3.67 Mbits/sec    0   52.3 KBytes       
+[ 24]   4.00-5.00   sec   444 KBytes  3.64 Mbits/sec    0   58.0 KBytes       
+[ 24]   5.00-6.00   sec   611 KBytes  5.00 Mbits/sec    0   65.0 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[ 24]   0.00-6.00   sec  2.39 MBytes  3.35 Mbits/sec    9             sender
+[ 24]   0.00-6.00   sec  2.38 MBytes  3.33 Mbits/sec                  receiver
+
+iperf Done.
+Mon Dec 5 15:37:53 CET 2016
+Connecting to host 10.0.0.3, port 5201
+[ 24] local 10.0.0.2 port 35012 connected to 10.0.0.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[ 24]   0.00-1.00   sec   225 KBytes  1.84 Mbits/sec   15   25.5 KBytes       
+[ 24]   1.00-2.00   sec   368 KBytes  3.01 Mbits/sec    0   39.6 KBytes       
+[ 24]   2.00-3.00   sec   410 KBytes  3.36 Mbits/sec    0   49.5 KBytes       
+[ 24]   3.00-4.00   sec   462 KBytes  3.79 Mbits/sec    0   55.1 KBytes       
+[ 24]   4.00-5.00   sec   413 KBytes  3.38 Mbits/sec    1   48.1 KBytes       
+[ 24]   5.00-6.00   sec   525 KBytes  4.30 Mbits/sec    0   38.2 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[ 24]   0.00-6.00   sec  2.35 MBytes  3.28 Mbits/sec   16             sender
+[ 24]   0.00-6.00   sec  2.29 MBytes  3.20 Mbits/sec                  receiver
+
+iperf Done.
+Mon Dec 5 15:38:19 CET 2016
+Connecting to host 10.0.0.3, port 5201
+[ 24] local 10.0.0.2 port 35014 connected to 10.0.0.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[ 24]   0.00-1.00   sec   301 KBytes  2.47 Mbits/sec   23   35.4 KBytes       
+[ 24]   1.00-2.00   sec   467 KBytes  3.82 Mbits/sec    0   49.5 KBytes       
+[ 24]   2.00-3.00   sec   469 KBytes  3.85 Mbits/sec    0   56.6 KBytes       
+[ 24]   3.00-4.00   sec   566 KBytes  4.63 Mbits/sec    0   63.6 KBytes       
+[ 24]   4.00-5.00   sec   454 KBytes  3.72 Mbits/sec    1   35.4 KBytes       
+[ 24]   5.00-6.00   sec   349 KBytes  2.86 Mbits/sec    0   41.0 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[ 24]   0.00-6.00   sec  2.55 MBytes  3.56 Mbits/sec   24             sender
+[ 24]   0.00-6.00   sec  2.48 MBytes  3.47 Mbits/sec                  receiver
+
+iperf Done.
+Mon Dec 5 15:38:43 CET 2016
+Connecting to host 10.0.0.3, port 5201
+[ 24] local 10.0.0.2 port 35016 connected to 10.0.0.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[ 24]   0.00-1.00   sec   157 KBytes  1.29 Mbits/sec    8   17.0 KBytes       
+[ 24]   1.00-2.00   sec   257 KBytes  2.11 Mbits/sec    0   31.1 KBytes       
+[ 24]   2.00-3.00   sec   376 KBytes  3.08 Mbits/sec    0   43.8 KBytes       
+[ 24]   3.00-4.00   sec   387 KBytes  3.17 Mbits/sec    0   50.9 KBytes       
+[ 24]   4.00-5.00   sec   387 KBytes  3.17 Mbits/sec    1   29.7 KBytes       
+[ 24]   5.00-6.00   sec   243 KBytes  1.99 Mbits/sec    0   35.4 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[ 24]   0.00-6.00   sec  1.77 MBytes  2.47 Mbits/sec    9             sender
+[ 24]   0.00-6.00   sec  1.73 MBytes  2.42 Mbits/sec                  receiver
+
+iperf Done.
+Mon Dec 5 15:39:07 CET 2016
+Connecting to host 10.0.0.3, port 5201
+[ 24] local 10.0.0.2 port 35018 connected to 10.0.0.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[ 24]   0.00-1.00   sec   365 KBytes  2.99 Mbits/sec   34   22.6 KBytes       
+[ 24]   1.00-2.00   sec   434 KBytes  3.56 Mbits/sec    0   41.0 KBytes       
+[ 24]   2.00-3.00   sec   484 KBytes  3.96 Mbits/sec    0   49.5 KBytes       
+[ 24]   3.00-4.00   sec   484 KBytes  3.96 Mbits/sec    0   55.1 KBytes       
+[ 24]   4.00-5.00   sec   485 KBytes  3.97 Mbits/sec    0   62.2 KBytes       
+[ 24]   5.00-6.00   sec   486 KBytes  3.98 Mbits/sec    0   66.5 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[ 24]   0.00-6.00   sec  2.67 MBytes  3.74 Mbits/sec   34             sender
+[ 24]   0.00-6.00   sec  2.59 MBytes  3.62 Mbits/sec                  receiver
+
+iperf Done.
+Mon Dec 5 15:39:36 CET 2016
+Connecting to host 10.0.0.3, port 5201
+[ 24] local 10.0.0.2 port 35020 connected to 10.0.0.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[ 24]   0.00-1.00   sec   618 KBytes  5.06 Mbits/sec   38   58.0 KBytes       
+[ 24]   1.00-2.00   sec   578 KBytes  4.74 Mbits/sec    0   69.3 KBytes       
+[ 24]   2.00-3.00   sec   585 KBytes  4.80 Mbits/sec    0   74.9 KBytes       
+[ 24]   3.00-4.00   sec   659 KBytes  5.40 Mbits/sec    0   80.6 KBytes       
+[ 24]   4.00-5.00   sec   734 KBytes  6.01 Mbits/sec    0   86.3 KBytes       
+[ 24]   5.00-6.00   sec   809 KBytes  6.63 Mbits/sec    0   91.9 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[ 24]   0.00-6.00   sec  3.89 MBytes  5.44 Mbits/sec   38             sender
+[ 24]   0.00-6.00   sec  3.78 MBytes  5.29 Mbits/sec                  receiver
+
+iperf Done.
+Mon Dec 5 15:40:07 CET 2016
+Connecting to host 10.0.0.3, port 5201
+[ 24] local 10.0.0.2 port 35022 connected to 10.0.0.3 port 5201
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[ 24]   0.00-0.93   sec  1.21 MBytes  11.0 Mbits/sec  110   93.3 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[ 24]   0.00-0.93   sec  1.21 MBytes  11.0 Mbits/sec  110             sender
+[ 24]   0.00-0.93   sec  0.00 Bytes  0.00 bits/sec                  receiver

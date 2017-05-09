@@ -1,0 +1,68 @@
+#!/bin/bash
+
+
+SF1=f4b70b00
+
+
+###############cwnd data###############
+
+grep -rZ -E "tcp_out" /home/mininet/Desktop/withflowtablesexp/4h4s-10ms-10mbps/Q50/doubleflow/syslog > cwnd_x1
+grep -rZ -E "cwnd" /home/mininet/Desktop/withflowtablesexp/4h4s-10ms-10mbps/Q50/doubleflow/syslog > cwnd_out1
+
+grep -rZ -E "$SF1" cwnd_out1 > cwnd_sf1
+#awk '{print $7, $12}' cwnd_sf1 > cwnd_sf1_new
+awk '{print $6, $11}' cwnd_sf1 > cwnd_sf1_new
+sed 's/]//' cwnd_sf1_new > cwnd_new_11_out
+#sed 's/[//' cwnd_sf1_new > cwnd_new_11_out
+sed 's/.//' cwnd_new_11_out > cwnd_new_11
+# head -n -5 cwnd_new_11_out > cwnd_new_1
+rm cwnd_x1
+rm cwnd_sf1
+rm cwnd_sf1_new
+rm cwnd_new_11_out
+rm cwnd_out1
+
+##############in_flight data####################
+
+grep -rZ -E "in_flight" /home/mininet/Desktop/withflowtablesexp/4h4s-10ms-10mbps/Q50/doubleflow/syslog > in_flight1
+
+grep -rZ -E "$SF1" in_flight1 > in_flight_sf1
+awk '{print $6, $11}' in_flight_sf1 > in_flight_sf1_new
+sed 's/]//' in_flight_sf1_new > in_flight_new_11_1
+sed 's/.//' in_flight_new_11_1 > in_flight_new_11
+# head -n -5 in_flight_new_11 > in_flight_new_1
+rm in_flight_sf1
+rm in_flight_sf1_new
+rm in_flight_new_11_1
+rm in_flight1
+
+
+#############ssthresh data################
+
+grep -rZ -E "ssthresh" /home/mininet/Desktop/withflowtablesexp/4h4s-10ms-10mbps/Q50/doubleflow/syslog > ssthresh1
+
+grep -rZ -E "$SF1" ssthresh1 > ssthresh_sf1
+awk '{print $6, $11}' ssthresh_sf1 > ssthresh_sf1_new
+sed 's/]//' ssthresh_sf1_new > ssthresh_new_111
+sed 's/.//' ssthresh_new_111 > ssthresh_new_11
+# head -n -5 ssthresh_new_11 > ssthresh_new_1
+rm ssthresh_sf1
+rm ssthresh_sf1_new
+rm ssthresh_new_111 
+rm ssthresh1
+ 
+############rtt data###############
+
+grep -rZ -E "tcp_rtt_estm" /home/mininet/Desktop/withflowtablesexp/4h4s-10ms-10mbps/Q50/doubleflow/syslog > rtt1
+
+#for subflow 1
+
+grep -rZ -E "$SF1" rtt1 > rtt_sf1
+awk '{print $6, $10}' rtt_sf1 > rtt_sf1_new
+sed 's/]//' rtt_sf1_new > rtt_new_111_1
+sed 's/.//' rtt_new_111_1 > rtt_new_11
+# head -n -5 rtt_new_11 > rtt_new_1
+rm rtt_sf1
+rm rtt_sf1_new
+rm rtt_new_111_1
+rm rtt1

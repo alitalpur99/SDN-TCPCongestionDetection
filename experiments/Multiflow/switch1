@@ -1,0 +1,98 @@
+2016-11-14 11:48:53.669: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=4 (via no_match) data_len=74 buffer=0x00000181
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:01,nw_src=10.0.0.4,nw_dst=10.0.0.1,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=5201,tp_dst=55443 tcp_csum:ee76
+2016-11-14 11:48:53.669: OFPT_FLOW_MOD (xid=0x1fe): ADD priority=65535,tcp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:01,nw_src=10.0.0.4,nw_dst=10.0.0.1,nw_tos=0,tp_src=5201,tp_dst=55443 idle:10 hard:30 buf:0x181 actions=output:1
+2016-11-14 11:48:53.832: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=1 (via no_match) data_len=74 buffer=0x00000182
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:04,nw_src=10.0.0.1,nw_dst=10.0.0.4,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=55444,tp_dst=5201 tcp_csum:7c6a
+2016-11-14 11:48:53.835: OFPT_FLOW_MOD (xid=0x1ff): ADD priority=65535,tcp,in_port=1,vlan_tci=0x0000,dl_src=00:00:00:00:00:01,dl_dst=00:00:00:00:00:04,nw_src=10.0.0.1,nw_dst=10.0.0.4,nw_tos=0,tp_src=55444,tp_dst=5201 idle:10 hard:30 buf:0x182 actions=output:4
+2016-11-14 11:48:53.911: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=4 (via no_match) data_len=74 buffer=0x00000183
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:01,nw_src=10.0.0.4,nw_dst=10.0.0.1,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=5201,tp_dst=55444 tcp_csum:b3b8
+2016-11-14 11:48:53.912: OFPT_FLOW_MOD (xid=0x206): ADD priority=65535,tcp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:04,dl_dst=00:00:00:00:00:01,nw_src=10.0.0.4,nw_dst=10.0.0.1,nw_tos=0,tp_src=5201,tp_dst=55444 idle:10 hard:30 buf:0x183 actions=output:1
+2016-11-14 11:48:54.169: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=2 (via no_match) data_len=74 buffer=0x00000184
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:05,nw_src=10.0.0.2,nw_dst=10.0.0.5,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=57582,tp_dst=5201 tcp_csum:2311
+2016-11-14 11:48:54.179: OFPT_FLOW_MOD (xid=0x207): ADD priority=65535,tcp,in_port=2,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:05,nw_src=10.0.0.2,nw_dst=10.0.0.5,nw_tos=0,tp_src=57582,tp_dst=5201 idle:10 hard:30 buf:0x184 actions=output:4
+2016-11-14 11:48:54.338: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=4 (via no_match) data_len=74 buffer=0x00000185
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:02,nw_src=10.0.0.5,nw_dst=10.0.0.2,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=5201,tp_dst=57582 tcp_csum:5fad
+2016-11-14 11:48:54.340: OFPT_FLOW_MOD (xid=0x20e): ADD priority=65535,tcp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:02,nw_src=10.0.0.5,nw_dst=10.0.0.2,nw_tos=0,tp_src=5201,tp_dst=57582 idle:10 hard:30 buf:0x185 actions=output:2
+2016-11-14 11:48:54.797: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=2 (via no_match) data_len=74 buffer=0x00000186
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:05,nw_src=10.0.0.2,nw_dst=10.0.0.5,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=57583,tp_dst=5201 tcp_csum:69a3
+2016-11-14 11:48:54.809: OFPT_FLOW_MOD (xid=0x20f): ADD priority=65535,tcp,in_port=2,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:05,nw_src=10.0.0.2,nw_dst=10.0.0.5,nw_tos=0,tp_src=57583,tp_dst=5201 idle:10 hard:30 buf:0x186 actions=output:4
+2016-11-14 11:48:54.982: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=4 (via no_match) data_len=74 buffer=0x00000187
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:02,nw_src=10.0.0.5,nw_dst=10.0.0.2,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=5201,tp_dst=57583 tcp_csum:53f0
+2016-11-14 11:48:54.983: OFPT_FLOW_MOD (xid=0x217): ADD priority=65535,tcp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:02,nw_src=10.0.0.5,nw_dst=10.0.0.2,nw_tos=0,tp_src=5201,tp_dst=57583 idle:10 hard:30 buf:0x187 actions=output:2
+2016-11-14 11:48:54.994: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=3 (via no_match) data_len=74 buffer=0x00000188
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:06,nw_src=10.0.0.3,nw_dst=10.0.0.6,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=39576,tp_dst=5201 tcp_csum:59f6
+2016-11-14 11:48:55.003: OFPT_FLOW_MOD (xid=0x218): ADD priority=65535,tcp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:06,nw_src=10.0.0.3,nw_dst=10.0.0.6,nw_tos=0,tp_src=39576,tp_dst=5201 idle:10 hard:30 buf:0x188 actions=output:4
+2016-11-14 11:48:55.162: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=4 (via no_match) data_len=74 buffer=0x00000189
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:06,dl_dst=00:00:00:00:00:03,nw_src=10.0.0.6,nw_dst=10.0.0.3,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=5201,tp_dst=39576 tcp_csum:723
+2016-11-14 11:48:55.165: OFPT_FLOW_MOD (xid=0x21f): ADD priority=65535,tcp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:06,dl_dst=00:00:00:00:00:03,nw_src=10.0.0.6,nw_dst=10.0.0.3,nw_tos=0,tp_src=5201,tp_dst=39576 idle:10 hard:30 buf:0x189 actions=output:3
+2016-11-14 11:48:55.512: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=3 (via no_match) data_len=74 buffer=0x0000018a
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:06,nw_src=10.0.0.3,nw_dst=10.0.0.6,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=39577,tp_dst=5201 tcp_csum:ea77
+2016-11-14 11:48:55.533: OFPT_FLOW_MOD (xid=0x220): ADD priority=65535,tcp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:06,nw_src=10.0.0.3,nw_dst=10.0.0.6,nw_tos=0,tp_src=39577,tp_dst=5201 idle:10 hard:30 buf:0x18a actions=output:4
+2016-11-14 11:48:55.747: OFPT_PACKET_IN (xid=0x0): total_len=74 in_port=4 (via no_match) data_len=74 buffer=0x0000018b
+tcp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:06,dl_dst=00:00:00:00:00:03,nw_src=10.0.0.6,nw_dst=10.0.0.3,nw_tos=0,nw_ecn=0,nw_ttl=64,tp_src=5201,tp_dst=39577 tcp_csum:3831
+2016-11-14 11:48:55.750: OFPT_FLOW_MOD (xid=0x227): ADD priority=65535,tcp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:06,dl_dst=00:00:00:00:00:03,nw_src=10.0.0.6,nw_dst=10.0.0.3,nw_tos=0,tp_src=5201,tp_dst=39577 idle:10 hard:30 buf:0x18b actions=output:3
+2016-11-14 11:48:57.917: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x0000018c
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=ca:6e:d8:ee:86:a0,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:b1b7
+2016-11-14 11:48:57.920: OFPT_PACKET_OUT (xid=0x229): in_port=4 actions=FLOOD buffer=0x0000018c
+2016-11-14 11:48:58.874: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x0000018d
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=6a:5e:e2:2d:72:d6,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:8d3b
+2016-11-14 11:48:58.876: OFPT_PACKET_OUT (xid=0x22c): in_port=4 actions=FLOOD buffer=0x0000018d
+2016-11-14 11:49:03.348: OFPT_ECHO_REQUEST (xid=0x0): 0 bytes of payload
+2016-11-14 11:49:03.369: OFPT_ECHO_REPLY (xid=0x0): 0 bytes of payload
+2016-11-14 11:49:03.487: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x0000018e
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=ca:6e:d8:ee:86:a0,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:785e
+2016-11-14 11:49:03.489: OFPT_PACKET_OUT (xid=0x22f): in_port=4 actions=FLOOD buffer=0x0000018e
+2016-11-14 11:49:03.507: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x0000018f
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=6a:5e:e2:2d:72:d6,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:25b9
+2016-11-14 11:49:03.509: OFPT_PACKET_OUT (xid=0x231): in_port=4 actions=FLOOD buffer=0x0000018f
+2016-11-14 11:49:03.952: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x00000190
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=6a:10:fd:4a:5b:21,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:59f4
+2016-11-14 11:49:03.961: OFPT_PACKET_OUT (xid=0x234): in_port=4 actions=FLOOD buffer=0x00000190
+2016-11-14 11:49:06.787: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x00000191
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=ca:6e:d8:ee:86:a0,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:785b
+2016-11-14 11:49:06.788: OFPT_PACKET_OUT (xid=0x23a): in_port=4 actions=FLOOD buffer=0x00000191
+2016-11-14 11:49:06.855: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x00000192
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=6a:10:fd:4a:5b:21,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:59f1
+2016-11-14 11:49:06.903: OFPT_PACKET_OUT (xid=0x23b): in_port=4 actions=FLOOD buffer=0x00000192
+2016-11-14 11:49:06.939: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x00000193
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=6a:5e:e2:2d:72:d6,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:25b6
+2016-11-14 11:49:06.942: OFPT_PACKET_OUT (xid=0x23e): in_port=4 actions=FLOOD buffer=0x00000193
+2016-11-14 11:49:09.631: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x00000194
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=ca:6e:d8:ee:86:a0,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:7858
+2016-11-14 11:49:09.633: OFPT_PACKET_OUT (xid=0x245): in_port=4 actions=FLOOD buffer=0x00000194
+2016-11-14 11:49:12.135: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x00000195
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=6a:5e:e2:2d:72:d6,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:25b0
+2016-11-14 11:49:12.137: OFPT_PACKET_OUT (xid=0x248): in_port=4 actions=FLOOD buffer=0x00000195
+2016-11-14 11:49:12.484: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x00000196
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=6a:10:fd:4a:5b:21,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:59eb
+2016-11-14 11:49:12.519: OFPT_PACKET_OUT (xid=0x249): in_port=4 actions=FLOOD buffer=0x00000196
+2016-11-14 11:49:13.908: OFPT_PACKET_IN (xid=0x0): total_len=342 in_port=4 (via no_match) data_len=128 buffer=0x00000197
+udp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=ca:6e:d8:ee:86:a0,dl_dst=ff:ff:ff:ff:ff:ff,nw_src=0.0.0.0,nw_dst=255.255.255.255,nw_tos=16,nw_ecn=0,nw_ttl=128,tp_src=68,tp_dst=67 udp_csum:7854
+2016-11-14 11:49:13.911: OFPT_PACKET_OUT (xid=0x24d): in_port=4 actions=FLOOD buffer=0x00000197
+2016-11-14 11:49:18.347: OFPT_ECHO_REQUEST (xid=0x0): 0 bytes of payload
+2016-11-14 11:49:18.369: OFPT_ECHO_REPLY (xid=0x0): 0 bytes of payload
+2016-11-14 11:49:18.671: OFPT_PACKET_IN (xid=0x0): total_len=42 in_port=4 (via no_match) data_len=42 buffer=0x00000198
+arp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:06,dl_dst=00:00:00:00:00:03,arp_spa=10.0.0.6,arp_tpa=10.0.0.3,arp_op=1,arp_sha=00:00:00:00:00:06,arp_tha=00:00:00:00:00:00
+2016-11-14 11:49:18.672: 2016-11-14T11:49:18Z|00001|ofp_util|INFO|normalization changed ofp_match, details:
+2016-11-14T11:49:18Z|00002|ofp_util|INFO| pre: arp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:06,dl_dst=00:00:00:00:00:03,arp_spa=10.0.0.6,arp_tpa=10.0.0.3,arp_op=1,nw_tos=0,tp_src=0,tp_dst=0
+2016-11-14T11:49:18Z|00003|ofp_util|INFO|post: arp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:06,dl_dst=00:00:00:00:00:03,arp_spa=10.0.0.6,arp_tpa=10.0.0.3,arp_op=1
+OFPT_FLOW_MOD (xid=0x254): ADD priority=65535,arp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:06,dl_dst=00:00:00:00:00:03,arp_spa=10.0.0.6,arp_tpa=10.0.0.3,arp_op=1 idle:10 hard:30 buf:0x198 actions=output:3
+2016-11-14 11:49:18.672: OFPT_PACKET_IN (xid=0x0): total_len=42 in_port=3 (via no_match) data_len=42 buffer=0x00000199
+arp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:06,arp_spa=10.0.0.3,arp_tpa=10.0.0.6,arp_op=2,arp_sha=00:00:00:00:00:03,arp_tha=00:00:00:00:00:06
+2016-11-14 11:49:18.677: 2016-11-14T11:49:18Z|00004|ofp_util|INFO|normalization changed ofp_match, details:
+2016-11-14T11:49:18Z|00005|ofp_util|INFO| pre: arp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:06,arp_spa=10.0.0.3,arp_tpa=10.0.0.6,arp_op=2,nw_tos=0,tp_src=0,tp_dst=0
+2016-11-14T11:49:18Z|00006|ofp_util|INFO|post: arp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:06,arp_spa=10.0.0.3,arp_tpa=10.0.0.6,arp_op=2
+OFPT_FLOW_MOD (xid=0x255): ADD priority=65535,arp,in_port=3,vlan_tci=0x0000,dl_src=00:00:00:00:00:03,dl_dst=00:00:00:00:00:06,arp_spa=10.0.0.3,arp_tpa=10.0.0.6,arp_op=2 idle:10 hard:30 buf:0x199 actions=output:4
+2016-11-14 11:49:20.410: OFPT_PACKET_IN (xid=0x0): total_len=42 in_port=4 (via no_match) data_len=42 buffer=0x0000019a
+arp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:02,arp_spa=10.0.0.5,arp_tpa=10.0.0.2,arp_op=1,arp_sha=00:00:00:00:00:05,arp_tha=00:00:00:00:00:00
+2016-11-14 11:49:20.412: 2016-11-14T11:49:20Z|00007|ofp_util|INFO|normalization changed ofp_match, details:
+2016-11-14T11:49:20Z|00008|ofp_util|INFO| pre: arp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:02,arp_spa=10.0.0.5,arp_tpa=10.0.0.2,arp_op=1,nw_tos=0,tp_src=0,tp_dst=0
+2016-11-14T11:49:20Z|00009|ofp_util|INFO|post: arp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:02,arp_spa=10.0.0.5,arp_tpa=10.0.0.2,arp_op=1
+OFPT_FLOW_MOD (xid=0x25c): ADD priority=65535,arp,in_port=4,vlan_tci=0x0000,dl_src=00:00:00:00:00:05,dl_dst=00:00:00:00:00:02,arp_spa=10.0.0.5,arp_tpa=10.0.0.2,arp_op=1 idle:10 hard:30 buf:0x19a actions=output:2
+2016-11-14 11:49:20.412: OFPT_PACKET_IN (xid=0x0): total_len=42 in_port=2 (via no_match) data_len=42 buffer=0x0000019b
+arp,metadata=0,in_port=0,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:05,arp_spa=10.0.0.2,arp_tpa=10.0.0.5,arp_op=2,arp_sha=00:00:00:00:00:02,arp_tha=00:00:00:00:00:05
+2016-11-14 11:49:20.415: 2016-11-14T11:49:20Z|00010|ofp_util|INFO|normalization changed ofp_match, details:
+2016-11-14T11:49:20Z|00011|ofp_util|INFO| pre: arp,in_port=2,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:05,arp_spa=10.0.0.2,arp_tpa=10.0.0.5,arp_op=2,nw_tos=0,tp_src=0,tp_dst=0
+2016-11-14T11:49:20Z|00012|ofp_util|INFO|post: arp,in_port=2,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:05,arp_spa=10.0.0.2,arp_tpa=10.0.0.5,arp_op=2
+OFPT_FLOW_MOD (xid=0x25d): ADD priority=65535,arp,in_port=2,vlan_tci=0x0000,dl_src=00:00:00:00:00:02,dl_dst=00:00:00:00:00:05,arp_spa=10.0.0.2,arp_tpa=10.0.0.5,arp_op=2 idle:10 hard:30 buf:0x19b actions=output:4
+2016-11-14T11:49:22Z|00013|fatal_signal|WARN|terminating with signal 1 (Hangup)

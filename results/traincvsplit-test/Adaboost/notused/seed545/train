@@ -1,0 +1,338 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     all-combined-weka.filters.unsupervised.instance.Randomize-S545-weka.filters.unsupervised.instance.Resample-S1-Z80.0-no-replacement
+Instances:    1036
+Attributes:   63
+              avgw3delay_div_avgw1delay
+              avgw3delay_div_minw1delay
+              avgw3delay_div_maxw1delay
+              avgw3delay_div_avgw2delay
+              avgw3delay_div_minw2delay
+              avgw3delay_div_maxw2delay
+              minw3delay_div_avgw1delay
+              minw3delay_div_minw1delay
+              minw3delay_div_maxw1delay
+              minw3delay_div_avgw2delay
+              minw3delay_div_minw2delay
+              minw3delay_div_maxw2delay
+              maxw3delay_div_avgw1delay
+              maxw3delay_div_minw1delay
+              maxw3delay_div_maxw1delay
+              maxw3delay_div_avgw2delay
+              maxw3delay_div_minw2delay
+              maxw3delay_div_maxw2delay
+              minw3delay_div_maxw3delay
+              stdw3delay_div_stdw1delay
+              stdw3delay_div_stdw2delay
+              stdw1delay_div_stdw2delay
+              avgw1delay_div_avgw2delay
+              avgw1delay_div_minw2delay
+              avgw1delay_div_maxw2delay
+              minw1delay_div_avgw2delay
+              minw1delay_div_minw2delay
+              minw1delay_div_maxw2delay
+              maxw1delay_div_avgw2delay
+              maxw1delay_div_minw2delay
+              maxw1delay_div_maxw2delay
+              avgw3iat_div_avgw1iat
+              avgw3iat_div_minw1iat
+              avgw3iat_div_maxw1iat
+              avgw3iat_div_avgw2iat
+              avgw3iat_div_minw2iat
+              avgw3iat_div_maxw2iat
+              minw3iat_div_avgw1iat
+              minw3iat_div_minw1iat
+              minw3iat_div_maxw1iat
+              minw3iat_div_avgw2iat
+              minw3iat_div_minw2iat
+              minw3iat_div_maxw2iat
+              maxw3iat_div_avgw1iat
+              maxw3iat_div_minw1iat
+              maxw3iat_div_maxw1iat
+              maxw3iat_div_avgw2iat
+              maxw3iat_div_minw2iat
+              maxw3iat_div_maxw2iat
+              minw3iat_div_maxw3iat
+              stdw3iat_div_stdw1iat
+              stdw3iat_div_stdw2iat
+              stdw1iat_div_stdw2iat
+              avgw1iat_div_avgw2iat
+              avgw1iat_div_minw2iat
+              avgw1iat_div_maxw2iat
+              minw1iat_div_avgw2iat
+              minw1iat_div_minw2iat
+              minw1iat_div_maxw2iat
+              maxw1iat_div_avgw2iat
+              maxw1iat_div_minw2iat
+              maxw1iat_div_maxw2iat
+              class
+Test mode:    split 75.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0021010000000001 : c
+maxw3delay_div_maxw2delay > 1.0021010000000001 : n
+maxw3delay_div_maxw2delay is missing : n
+
+Class distributions
+
+maxw3delay_div_maxw2delay <= 1.0021010000000001
+c	n	
+0.7419847328244275	0.2580152671755725	
+maxw3delay_div_maxw2delay > 1.0021010000000001
+c	n	
+0.013123359580052493	0.9868766404199475	
+maxw3delay_div_maxw2delay is missing
+c	n	
+0.47393822393822393	0.5260617760617761	
+
+
+Weight: 1.6
+
+Decision Stump
+
+Classifications
+
+stdw3delay_div_stdw1delay <= 4.064024 : n
+stdw3delay_div_stdw1delay > 4.064024 : c
+stdw3delay_div_stdw1delay is missing : n
+
+Class distributions
+
+stdw3delay_div_stdw1delay <= 4.064024
+c	n	
+0.1532640423844638	0.8467359576155362	
+stdw3delay_div_stdw1delay > 4.064024
+c	n	
+0.8351878934316742	0.16481210656832584	
+stdw3delay_div_stdw1delay is missing
+c	n	
+0.2962703682961276	0.7037296317038724	
+
+
+Weight: 1.69
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998 : c
+maxw3delay_div_maxw2delay > 1.0207674999999998 : n
+maxw3delay_div_maxw2delay is missing : n
+
+Class distributions
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998
+c	n	
+0.5604738017547019	0.4395261982452982	
+maxw3delay_div_maxw2delay > 1.0207674999999998
+c	n	
+3.943091391828159E-15	0.999999999999996	
+maxw3delay_div_maxw2delay is missing
+c	n	
+0.4927199909618824	0.5072800090381175	
+
+
+Weight: 0.46
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw1delay <= 0.8216005 : c
+maxw3delay_div_maxw1delay > 0.8216005 : n
+maxw3delay_div_maxw1delay is missing : n
+
+Class distributions
+
+maxw3delay_div_maxw1delay <= 0.8216005
+c	n	
+0.5625473966043439	0.437452603395656	
+maxw3delay_div_maxw1delay > 0.8216005
+c	n	
+0.18710870880762107	0.812891291192379	
+maxw3delay_div_maxw1delay is missing
+c	n	
+0.4014949831428766	0.5985050168571233	
+
+
+Weight: 0.71
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998 : n
+maxw3delay_div_maxw2delay > 1.0207674999999998 : n
+maxw3delay_div_maxw2delay is missing : n
+
+Class distributions
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998
+c	n	
+0.39574123749670054	0.6042587625032995	
+maxw3delay_div_maxw2delay > 1.0207674999999998
+c	n	
+-4.3389371753716093E-16	1.0000000000000004	
+maxw3delay_div_maxw2delay is missing
+c	n	
+0.361336275421253	0.638663724578747	
+
+
+Weight: 0.57
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998 : c
+maxw3delay_div_maxw2delay > 1.0207674999999998 : n
+maxw3delay_div_maxw2delay is missing : n
+
+Class distributions
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998
+c	n	
+0.5365166325101287	0.46348336748987135	
+maxw3delay_div_maxw2delay > 1.0207674999999998
+c	n	
+-1.0026422430001115E-14	1.00000000000001	
+maxw3delay_div_maxw2delay is missing
+c	n	
+0.4999999999999975	0.5000000000000026	
+
+
+Weight: 0.27
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998 : n
+maxw3delay_div_maxw2delay > 1.0207674999999998 : n
+maxw3delay_div_maxw2delay is missing : n
+
+Class distributions
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998
+c	n	
+0.4681374234802549	0.5318625765197451	
+maxw3delay_div_maxw2delay > 1.0207674999999998
+c	n	
+-1.3108544620285475E-14	1.000000000000013	
+maxw3delay_div_maxw2delay is missing
+c	n	
+0.4400924638686992	0.559907536131301	
+
+
+Weight: 0.24
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998 : c
+maxw3delay_div_maxw2delay > 1.0207674999999998 : n
+maxw3delay_div_maxw2delay is missing : c
+
+Class distributions
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998
+c	n	
+0.5282607369459598	0.47173926305404024	
+maxw3delay_div_maxw2delay > 1.0207674999999998
+c	n	
+-1.2499709340779113E-14	1.0000000000000127	
+maxw3delay_div_maxw2delay is missing
+c	n	
+0.5000000000000006	0.49999999999999944	
+
+
+Weight: 0.21
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998 : n
+maxw3delay_div_maxw2delay > 1.0207674999999998 : n
+maxw3delay_div_maxw2delay is missing : n
+
+Class distributions
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998
+c	n	
+0.4746094820489816	0.5253905179510183	
+maxw3delay_div_maxw2delay > 1.0207674999999998
+c	n	
+-2.3061868101316085E-14	1.000000000000023	
+maxw3delay_div_maxw2delay is missing
+c	n	
+0.4516730563580776	0.5483269436419225	
+
+
+Weight: 0.19
+
+Decision Stump
+
+Classifications
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998 : c
+maxw3delay_div_maxw2delay > 1.0207674999999998 : n
+maxw3delay_div_maxw2delay is missing : n
+
+Class distributions
+
+maxw3delay_div_maxw2delay <= 1.0207674999999998
+c	n	
+0.5230495571706011	0.4769504428293989	
+maxw3delay_div_maxw2delay > 1.0207674999999998
+c	n	
+-1.6419622217173602E-14	1.0000000000000164	
+maxw3delay_div_maxw2delay is missing
+c	n	
+0.4999999999999933	0.5000000000000067	
+
+
+Weight: 0.18
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.2 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         235               90.7336 %
+Incorrectly Classified Instances        24                9.2664 %
+Kappa statistic                          0.8146
+Mean absolute error                      0.1517
+Root mean squared error                  0.2699
+Relative absolute error                 30.4578 %
+Root relative squared error             54.139  %
+Total Number of Instances              259     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.949    0.127    0.860      0.949    0.902      0.818    0.965     0.936     c
+                 0.873    0.051    0.954      0.873    0.912      0.818    0.965     0.965     n
+Weighted Avg.    0.907    0.085    0.912      0.907    0.908      0.818    0.965     0.952     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 111   6 |   a = c
+  18 124 |   b = n
+

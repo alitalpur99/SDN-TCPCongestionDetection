@@ -1,0 +1,148 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     all-combined-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.instance.Resample-S1-Z80.0-no-replacement
+Instances:    1036
+Attributes:   63
+              avgw3delay_div_avgw1delay
+              avgw3delay_div_minw1delay
+              avgw3delay_div_maxw1delay
+              avgw3delay_div_avgw2delay
+              avgw3delay_div_minw2delay
+              avgw3delay_div_maxw2delay
+              minw3delay_div_avgw1delay
+              minw3delay_div_minw1delay
+              minw3delay_div_maxw1delay
+              minw3delay_div_avgw2delay
+              minw3delay_div_minw2delay
+              minw3delay_div_maxw2delay
+              maxw3delay_div_avgw1delay
+              maxw3delay_div_minw1delay
+              maxw3delay_div_maxw1delay
+              maxw3delay_div_avgw2delay
+              maxw3delay_div_minw2delay
+              maxw3delay_div_maxw2delay
+              minw3delay_div_maxw3delay
+              stdw3delay_div_stdw1delay
+              stdw3delay_div_stdw2delay
+              stdw1delay_div_stdw2delay
+              avgw1delay_div_avgw2delay
+              avgw1delay_div_minw2delay
+              avgw1delay_div_maxw2delay
+              minw1delay_div_avgw2delay
+              minw1delay_div_minw2delay
+              minw1delay_div_maxw2delay
+              maxw1delay_div_avgw2delay
+              maxw1delay_div_minw2delay
+              maxw1delay_div_maxw2delay
+              avgw3iat_div_avgw1iat
+              avgw3iat_div_minw1iat
+              avgw3iat_div_maxw1iat
+              avgw3iat_div_avgw2iat
+              avgw3iat_div_minw2iat
+              avgw3iat_div_maxw2iat
+              minw3iat_div_avgw1iat
+              minw3iat_div_minw1iat
+              minw3iat_div_maxw1iat
+              minw3iat_div_avgw2iat
+              minw3iat_div_minw2iat
+              minw3iat_div_maxw2iat
+              maxw3iat_div_avgw1iat
+              maxw3iat_div_minw1iat
+              maxw3iat_div_maxw1iat
+              maxw3iat_div_avgw2iat
+              maxw3iat_div_minw2iat
+              maxw3iat_div_maxw2iat
+              minw3iat_div_maxw3iat
+              stdw3iat_div_stdw1iat
+              stdw3iat_div_stdw2iat
+              stdw1iat_div_stdw2iat
+              avgw1iat_div_avgw2iat
+              avgw1iat_div_minw2iat
+              avgw1iat_div_maxw2iat
+              minw1iat_div_avgw2iat
+              minw1iat_div_minw2iat
+              minw1iat_div_maxw2iat
+              maxw1iat_div_avgw2iat
+              maxw1iat_div_minw2iat
+              maxw1iat_div_maxw2iat
+              class
+Test mode:    split 75.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+maxw3delay_div_maxw2delay <= 1
+|   minw3delay_div_maxw3delay <= 0.853659
+|   |   stdw3delay_div_stdw1delay <= 5.985703
+|   |   |   maxw3delay_div_maxw1delay <= 0.830601
+|   |   |   |   minw1delay_div_maxw2delay <= 0.768116
+|   |   |   |   |   maxw1iat_div_avgw2iat <= 5.445545
+|   |   |   |   |   |   minw1delay_div_minw2delay <= 1.047337
+|   |   |   |   |   |   |   minw3delay_div_maxw2delay <= 0.533867: c (22.0/2.0)
+|   |   |   |   |   |   |   minw3delay_div_maxw2delay > 0.533867
+|   |   |   |   |   |   |   |   maxw3delay_div_minw1delay <= 0.48: n (10.0/2.0)
+|   |   |   |   |   |   |   |   maxw3delay_div_minw1delay > 0.48: c (65.0/22.0)
+|   |   |   |   |   |   minw1delay_div_minw2delay > 1.047337: n (8.0/1.0)
+|   |   |   |   |   maxw1iat_div_avgw2iat > 5.445545
+|   |   |   |   |   |   avgw1delay_div_avgw2delay <= 0.90999: c (44.0)
+|   |   |   |   |   |   avgw1delay_div_avgw2delay > 0.90999
+|   |   |   |   |   |   |   avgw1delay_div_avgw2delay <= 0.930802: n (3.0)
+|   |   |   |   |   |   |   avgw1delay_div_avgw2delay > 0.930802: c (13.0/1.0)
+|   |   |   |   minw1delay_div_maxw2delay > 0.768116: c (68.0/1.0)
+|   |   |   maxw3delay_div_maxw1delay > 0.830601
+|   |   |   |   maxw3delay_div_maxw1delay <= 0.833333: n (9.0)
+|   |   |   |   maxw3delay_div_maxw1delay > 0.833333: c (4.0)
+|   |   stdw3delay_div_stdw1delay > 5.985703: c (246.0/2.0)
+|   minw3delay_div_maxw3delay > 0.853659
+|   |   stdw3delay_div_stdw2delay <= 1.577531
+|   |   |   maxw1delay_div_avgw2delay <= 1.072781
+|   |   |   |   stdw1iat_div_stdw2iat <= 1.242666: n (102.0/29.0)
+|   |   |   |   stdw1iat_div_stdw2iat > 1.242666: c (5.0)
+|   |   |   maxw1delay_div_avgw2delay > 1.072781: n (37.0)
+|   |   stdw3delay_div_stdw2delay > 1.577531: c (12.0)
+maxw3delay_div_maxw2delay > 1
+|   minw3delay_div_maxw2delay <= 0.889565
+|   |   maxw3delay_div_maxw2delay <= 1.016529: c (5.0)
+|   |   maxw3delay_div_maxw2delay > 1.016529
+|   |   |   minw3iat_div_maxw2iat <= 0.180741: c (3.0/1.0)
+|   |   |   minw3iat_div_maxw2iat > 0.180741: n (14.0)
+|   minw3delay_div_maxw2delay > 0.889565: n (366.0/1.0)
+
+Number of Leaves  : 	19
+
+Size of the tree : 	37
+
+
+Time taken to build model: 0.1 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on training split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         225               86.8726 %
+Incorrectly Classified Instances        34               13.1274 %
+Kappa statistic                          0.7332
+Mean absolute error                      0.136 
+Root mean squared error                  0.3458
+Relative absolute error                 27.3068 %
+Root relative squared error             69.3656 %
+Total Number of Instances              259     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.835    0.104    0.865      0.835    0.850      0.734    0.863     0.838     c
+                 0.896    0.165    0.872      0.896    0.884      0.734    0.863     0.845     n
+Weighted Avg.    0.869    0.138    0.869      0.869    0.868      0.734    0.863     0.842     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  96  19 |   a = c
+  15 129 |   b = n
+

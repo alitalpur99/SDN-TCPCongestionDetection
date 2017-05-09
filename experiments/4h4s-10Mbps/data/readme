@@ -1,0 +1,13 @@
+individual weka ML results
+
+J48
+	CV	78.5
+	PS	73.1
+
+AdaBoost
+	CV	79.2
+	PS	82.6
+
+Baggin
+	CV	76.7
+	PS	76.8

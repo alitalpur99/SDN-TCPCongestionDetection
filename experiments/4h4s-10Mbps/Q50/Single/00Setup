@@ -1,0 +1,9 @@
+# Instructions for running the scenarios
+
+1. Start Pox controller (cd pox, ./pox.py)
+
+2. Run Python Topo script (sudo python Topo4s-4h.py)
+This will run topology, ethtool, install tables, all the thing in run-bash script
+
+3. from mininet, open xterm for h1 h2 h4, run their script h1.sh...
+This will start all the snoop commands and Iperf commands
